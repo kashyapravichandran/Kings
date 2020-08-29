@@ -5,22 +5,22 @@ from random import randint
 
 
 cards=[
-    ["2H.png","You"],["2S.png","You"],["2C.png","You"],["2D.png","You"],
-    ["3H.png","Me"],["3S.png","Me"],["3C.png","Me"],["3D.png","Me"],
-    ["4H.png","Never Have I Ever Ronak and Shwetha edition"],["4S.png","Never Have I Ever Ronak and Shwetha edition"],["4C.png","Never Have I Ever Ronak and Shwetha edition"],["4D.png","Never Have I Ever Ronak and Shwetha edition"],
-    ["5H.png","Guys"],["5S.png","Guys"],["5C.png","Guys"],["5D.png","Guys"],
-    ["6H.png","Chicks"],["6S.png","Chicks"],["6C.png","Chicks"],["6D.png","Chicks"],
-    ["7H.png","Ronfoundhisshway on chat"],["7S.png","Ronfoundhisshway on chat"],["7C.png","Ronfoundhisshway on chat"],["7D.png","Ronfoundhisshway on chat"],
-    ["8H.png","Date"],["8S.png","Date"],["8C.png","Date"],["8D.png","Date"],
-    ["9H.png","Whine (roast)"],["9S.png","Whine (roast)"],["9C.png","Whine (roast)"],["9D.png","Whine (roast)"],
-    ["10H.png","Ronak gets to pick 5 and Shway picks 5"],["10S.png","Ronak gets to pick 5 and Shway picks 5"],["10C.png","Ronak gets to pick 5 and Shway picks 5"],["10D.png","Ronak gets to pick 5 and Shway picks 5"],
-    ["JH.png","Ring Master (rule maker)"],["JS.png","Ring Master (rule maker)"],["JC.png","Ring Master (rule maker)"],["JD.png","Ring Master (rule maker)"],
-    ["QH.png","Shway"],["QS.png","Shway"],["QC.png","Shway"],["QD.png","Shway"],
-    ["KH.png","Ron"],["KS.png","Ron"],["KC.png","Ron"],["KD.png","Ron"],
-    ["AH.png","Make a toast"],["AS.png","Make a toast"],["AC.png","Make a toast"],["AD.png","Make a toast"]]
+    ["img\\2H.png","You"],["img\\2S.png","You"],["img\\2C.png","You"],["img\\2D.png","You"],
+    ["img\\3H.png","Me"],["img\\3S.png","Me"],["img\\3C.png","Me"],["img\\3D.png","Me"],
+    ["img\\4H.png","Never Have I Ever"],["img\\4S.png","Never Have I Ever"],["img\\4C.png","Never Have I Ever"],["img\\4D.png","Never Have I Ever"],
+    ["img\\5H.png","Guys"],["img\\5S.png","Guys"],["img\\5C.png","Guys"],["img\\5D.png","Guys"],
+    ["img\\6H.png","Chicks"],["img\\6S.png","Chicks"],["img\\6C.png","Chicks"],["img\\6D.png","Chicks"],
+    ["img\\7H.png","Moosemaster"],["img\\7S.png","Moosemaster"],["img\\7C.png","Moosemaster"],["img\\7D.png","Moosemaster"],
+    ["img\\8H.png","Date"],["img\\8S.png","Date"],["img\\8C.png","Date"],["img\\8D.png","Date"],
+    ["img\\9H.png","Whine (roast)"],["img\\9S.png","Whine (roast)"],["img\\9C.png","Whine (roast)"],["img\\9D.png","Whine (roast)"],
+    ["img\\10H.png","Pick 10 People to drink"],["img\\10S.png","Pick 10 people to drink"],["img\\10C.png","Pick 10 people to drink"],["img\\10D.png","Pick 10 people to drink"],
+    ["img\\JH.png","Ring Master (rule maker)"],["img\\JS.png","Ring Master (rule maker)"],["img\\JC.png","Ring Master (rule maker)"],["img\\JD.png","Ring Master (rule maker)"],
+    ["img\\QH.png","Hostess"],["img\\QS.png","Hostess"],["img\\QC.png","Hostess"],["img\\QD.png","Hostess"],
+    ["img\\KH.png","Host"],["img\\KS.png","Host"],["img\\KC.png","Host"],["img\\KD.png","Host"],
+    ["img\\AH.png","Make a toast"],["img\\AS.png","Make a toast"],["img\\AC.png","Make a toast"],["img\\AD.png","Make a toast"]]
 
 
-players=["PLayer 1", "Player 2", "Player 3", "Player 4","Player 5"]
+players=["Player 1", "Player 2", "Player 3", "Player 4","Player 5"]
 
 num_player=5;
 player_id=0;
@@ -116,20 +116,20 @@ class mainpage(wx.Frame): # bluetooth option
     def resetbtn(self,event):
             global cards, num_cards
             num_cards=52;
-            cards=[
-				    ["2H.png","You"],["2S.png","You"],["2C.png","You"],["2D.png","You"],
-				    ["3H.png","Me"],["3S.png","Me"],["3C.png","Me"],["3D.png","Me"],
-				    ["4H.png","Never Have I Ever Ronak and Shwetha edition"],["4S.png","Never Have I Ever Ronak and Shwetha edition"],["4C.png","Never Have I Ever Ronak and Shwetha edition"],["4D.png","Never Have I Ever Ronak and Shwetha edition"],
-				    ["5H.png","Guys"],["5S.png","Guys"],["5C.png","Guys"],["5D.png","Guys"],
-				    ["6H.png","Chicks"],["6S.png","Chicks"],["6C.png","Chicks"],["6D.png","Chicks"],
-				    ["7H.png","Ronfoundhisshway on chat"],["7S.png","Ronfoundhisshway on chat"],["7C.png","Ronfoundhisshway on chat"],["7D.png","Ronfoundhisshway on chat"],
-				    ["8H.png","Date"],["8S.png","Date"],["8C.png","Date"],["8D.png","Date"],
-				    ["9H.png","Whine (roast)"],["9S.png","Whine (roast)"],["9C.png","Whine (roast)"],["9D.png","Whine (roast)"],
-				    ["10H.png","Ronak gets to pick 5 and Shway picks 5"],["10S.png","Ronak gets to pick 5 and Shway picks 5"],["10C.png","Ronak gets to pick 5 and Shway picks 5"],["10D.png","Ronak gets to pick 5 and Shway picks 5"],
-				    ["JH.png","Ring Master (rule maker)"],["JS.png","Ring Master (rule maker)"],["JC.png","Ring Master (rule maker)"],["JD.png","Ring Master (rule maker)"],
-				    ["QH.png","Shway"],["QS.png","Shway"],["QC.png","Shway"],["QD.png","Shway"],
-				    ["KH.png","Ron"],["KS.png","Ron"],["KC.png","Ron"],["KD.png","Ron"],
-				    ["AH.png","Make a toast"],["AS.png","Make a toast"],["AC.png","Make a toast"],["AD.png","Make a toast"]]
+            cards=[ ["img\\2H.png","You"],["img\\2S.png","You"],["img\\2C.png","You"],["img\\2D.png","You"],
+                    ["img\\3H.png","Me"],["img\\3S.png","Me"],["img\\3C.png","Me"],["img\\3D.png","Me"],
+                    ["img\\4H.png","Never Have I Ever"],["img\\4S.png","Never Have I Ever"],["img\\4C.png","Never Have I Ever"],["img\\4D.png","Never Have I Ever"],
+                    ["img\\5H.png","Guys"],["img\\5S.png","Guys"],["img\\5C.png","Guys"],["img\\5D.png","Guys"],
+                    ["img\\6H.png","Chicks"],["img\\6S.png","Chicks"],["img\\6C.png","Chicks"],["img\\6D.png","Chicks"],
+                    ["img\\7H.png","Moosemaster"],["img\\7S.png","Moosemaster"],["img\\7C.png","Moosemaster"],["img\\7D.png","Moosemaster"],
+                    ["img\\8H.png","Date"],["img\\8S.png","Date"],["img\\8C.png","Date"],["img\\8D.png","Date"],
+                    ["img\\9H.png","Whine (roast)"],["img\\9S.png","Whine (roast)"],["img\\9C.png","Whine (roast)"],["img\\9D.png","Whine (roast)"],
+                    ["img\\10H.png","Pick 10 People to drink"],["img\\10S.png","Pick 10 people to drink"],["img\\10C.png","Pick 10 people to drink"],["img\\10D.png","Pick 10 people to drink"],
+                    ["img\\JH.png","Ring Master (rule maker)"],["img\\JS.png","Ring Master (rule maker)"],["img\\JC.png","Ring Master (rule maker)"],["img\\JD.png","Ring Master (rule maker)"],
+                    ["img\\QH.png","Hostess"],["img\\QS.png","Hostess"],["img\\QC.png","Hostess"],["img\\QD.png","Hostess"],
+                    ["img\\KH.png","Host"],["img\\KS.png","Host"],["img\\KC.png","Host"],["img\\KD.png","Host"],
+                    ["img\\AH.png","Make a toast"],["img\\AS.png","Make a toast"],["img\\AC.png","Make a toast"],["img\\AD.png","Make a toast"]]
+
             child=mainpage(parent=None,id=-1,title='Main again')
             self.Destroy()
 
